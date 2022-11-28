@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 import cl.generation.web.models.AntecedentesM;
 
 @Repository
-public interface AntecedentesMRepositories extends JpaRepository<AntecedentesM, Long>{ 
+public interface AntecedentesMRepository extends JpaRepository<AntecedentesM, Long>{ 
 }
 
 

@@ -16,7 +16,7 @@ import lombok.Setter;
 import lombok.ToString;
 
 @Entity
-@Table(name="prevision")
+@Table(name="previsiones")
 @Getter
 @Setter
 @AllArgsConstructor

@@ -7,12 +7,12 @@ import org.springframework.stereotype.Service;
 
 import cl.generation.web.models.Especialista;
 
-import cl.generation.web.repositories.EspecialistaRepositories;
+import cl.generation.web.repositories.EspecialistaRepository;
 
 @Service
 public class EspecialistaServicesImpl implements EspecialistaService {
 	@Autowired
-	private EspecialistaRepositories especialistarepositories;
+	private EspecialistaRepository especialistarepositories;
 	
 	@Override
 	public Especialista  guardarEspecialista(Especialista especialista) {

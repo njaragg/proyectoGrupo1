@@ -15,7 +15,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 
 @Entity
-@Table(name= "antecedentesM")
+@Table(name= "antecedentes_morbidos")
 public class AntecedentesM {
 
 	@Id

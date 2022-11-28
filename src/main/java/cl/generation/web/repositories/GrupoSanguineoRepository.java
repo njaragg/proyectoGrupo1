@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import cl.generation.web.models.GrupoSanguineo;
 
 @EnableJpaRepositories
-public interface GrupoSanguineoRepositories extends JpaRepository<GrupoSanguineo, Long> {
+public interface GrupoSanguineoRepository extends JpaRepository<GrupoSanguineo, Long> {
 
 }

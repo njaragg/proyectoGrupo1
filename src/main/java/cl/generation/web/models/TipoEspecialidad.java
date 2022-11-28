@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "TipoEspecialidades")
+@Table(name = "tipos_especialidades")
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter

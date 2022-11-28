@@ -7,12 +7,12 @@ import org.springframework.stereotype.Service;
 
 import cl.generation.web.models.AntecedentesM;
 import cl.generation.web.models.GrupoSanguineo;
-import cl.generation.web.repositories.AntecedentesMRepositories;
+import cl.generation.web.repositories.AntecedentesMRepository;
 
 @Service
 public class AntecedentesMServiceImpl implements AntecedentesMService {
 	@Autowired
-	private AntecedentesMRepositories antecedentesMRepositories;
+	private AntecedentesMRepository antecedentesMRepositories;
 	
 
 	@Override

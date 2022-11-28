@@ -6,12 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import cl.generation.web.models.GrupoSanguineo;
-import cl.generation.web.repositories.GrupoSanguineoRepositories;
+import cl.generation.web.repositories.GrupoSanguineoRepository;
 
 @Service
 public class GrupoSanguineoServiceImpl implements GrupoSanguineoService {
 	@Autowired
-	private GrupoSanguineoRepositories gruposanguineorepositories;
+	private GrupoSanguineoRepository gruposanguineorepositories;
 	
 	public GrupoSanguineo guardarGrupoSanguineo(GrupoSanguineo gruposanguineo) {
 		gruposanguineorepositories.save(gruposanguineo);
