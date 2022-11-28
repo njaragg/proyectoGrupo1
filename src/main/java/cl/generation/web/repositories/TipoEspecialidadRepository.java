@@ -3,9 +3,9 @@ package cl.generation.web.repositories;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import cl.generation.web.models.Usuario;
+import cl.generation.web.models.TipoEspecialidad;
 
 @Repository
-public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
+public interface TipoEspecialidadRepository extends JpaRepository<TipoEspecialidad, Long> {
 
 }

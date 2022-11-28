@@ -1,5 +1,5 @@
 package cl.generation.web.controllers;
 
-public class UsuarioController {
+public class TipoEspecialidadController {
 
 }
