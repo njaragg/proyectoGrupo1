@@ -3,11 +3,17 @@ package cl.generation.web.models;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
@@ -17,6 +23,9 @@ import javax.validation.constraints.Size;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonProperty.Access;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -69,8 +78,7 @@ public class Usuario {
 	@NotNull
 	private String genero;
 
-	@NotNull
-	private String prevision;
+
 
 	@Column(updatable = false)
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
@@ -78,7 +86,7 @@ public class Usuario {
 
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date updatedAt; // MODIFICAR UN REGISTRO
-
+	
 
 	@PrePersist
 	protected void onCreate() {
@@ -89,5 +97,36 @@ public class Usuario {
 	protected void onUpdate() {
 		this.updatedAt = new Date();
 	}
+	
+	//******************************RELACIONES*******************************************
+	
+	
+	//******************************USUARIO-PREVISION************************************
+	
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "previsiones_id")
+	private Prevision prevision;
+	
+	//***********************************************************************************
+	
+	
+	
+	//******************************USUARIO-NOTA MEDICA**********************************
+	
+	@OneToMany
+	(mappedBy = "usuarios",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+	private List<NotaMedica> notas_Medicas;
+	
+	//***********************************************************************************
+	
+	
+	
+	//******************************USUARIO-FICHA MEDICA*********************************
+	
+	@OneToOne(mappedBy = "usuario",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+	private FichaMedica fichaMedica;
+	
+	//***********************************************************************************
 
+	
 }
