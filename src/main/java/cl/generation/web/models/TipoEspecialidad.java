@@ -32,6 +32,7 @@ public class TipoEspecialidad {
 	private String tipo;
 
 	//****************************** TIPO ESPECIALIDAD-NOTA MEDICA************************************
+	@JsonIgnore //faltaba este JSONIGNORE
 	@OneToMany
 	(mappedBy = "tipos_especialidades",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
 	private List<NotaMedica> notas_Medicas;
