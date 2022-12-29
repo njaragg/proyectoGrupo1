@@ -36,17 +36,20 @@
             </nav>
             </section>
     <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-    <section class="form-login">
-        <h3><b>INICIO DE SESIÓN</b></h3>
-        <h5><b>Correo</b></h5>
-        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su mail">
-        <h5><b>Contraseña</b></h5>
-        <input class="controls" type="password" name="Contraseña" id="contraseña" placeholder="Ingrese su contraseña">
+<div class="container">
+         <h3><b>INICIO DE SESIÓN</b></h3>
+ <form action="/login/admin" method="post" id="login">
+ <label for="correo" class="form-label">Correo</label>
+ <input type="email" name="correo" id="correo" placeholder="Ingrese su mail" required="required" class="form-control">
+ <br>
+ <label for="password" class="form-label">Contraseña</label>
+ <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" required="required" class="form-control">
+        <br>
         <input class="botons" type= "submit" value="Ingresar">
-        <h6>¿No tienes cuenta?</h6>
-        <p><a href="#"">Regístrate</a></p>
-    </section>
+                       <h6>¿No tienes cuenta?</h6>
+        <p><a href="#">Regístrate</a></p>
+</form>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -16,7 +16,7 @@ public class UsuarioApiRestController {
 	private UsuarioServiceImpl usuarioServiceImpl;
 
 	@RequestMapping("/guardar/usuario")
-	public Usuario guardarUsuario(@RequestBody Usuario usuario) {
+	public String guardarUsuario(@RequestBody Usuario usuario) {
 		// http://localhost:8080/guardar/usuario
 		/*
 		 * { "nombre":"cristi", "apellido":"Alvarado", "rut":"19934544-7",
@@ -24,9 +24,15 @@ public class UsuarioApiRestController {
 		 * "sexo":"fem", "correo":"a3456@a.cl", "prevision":"isapre",
 		 * "password":"secret3" }
 		 */
-		return usuarioServiceImpl.guardarUsuario(usuario);// "Usuario guardado";
+		Boolean resultado = usuarioServiceImpl.guardarUsuario(usuario);
+		if(resultado) {//si es verdadero
+			return "Insertado correctamente"; //enviar a una vista
+		}else {
+			return "Error la crear usuario";
+		}
 	}
-
+	
+	
 	@RequestMapping("/eliminar/usuario")
 	public String eliminarUsuario(@RequestParam(value = "id", required = false) Long id) {
 
