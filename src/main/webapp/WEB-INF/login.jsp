@@ -36,7 +36,7 @@
             </nav>
             </section>
     <!------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<div class="container">
+<div class="login">
          <h3><b>INICIO DE SESIÓN</b></h3>
  <form action="/login/admin" method="post" id="login">
  <label for="correo" class="form-label">Correo</label>
