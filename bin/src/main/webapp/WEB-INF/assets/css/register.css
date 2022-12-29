@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url("/src/img/medicamento.jpg");
+    background-size: 1570px 800px;
+    background-repeat: no-repeat;
+    background-size: cover ;
+
+}
+
+
+#logo{
+
+    height: 90px;
+    align-self: center;
+
+}
+
+
+.form-register { 
+    width: 400px;
+    height: 620px;
+    background-color: #00507d; /*fondo de la capsula*/
+    padding:30px;
+    margin:auto;
+    margin-top:  20px;
+    border-radius:8px;
+    font-family: 'calibri';
+    box-shadow: 7px 13px 37px rgb(0, 0, 0);
+
+}
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom:15px;
+    text-align: center;
+    color:#ffffff;
+}
+.form-register h3 {
+    font-size: 22px;
+    margin-bottom:15px;
+    text-align: center;
+    color:#01C7DD;
+}
+.form-register h5 {
+    font-size: 15px;
+    margin-top: 20px;
+    color:#F2F6F8;
+}
+.form-register h6 {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: center;
+    color:#F2F6F8;
+}
+.controls{
+    width:100%;
+    background:#CADDED;/*fondo del rectangulo que rellena el user*/
+    padding:10px;
+    border-radius: 4px;
+    margin-bottom: 1 px solid #01C7DD;
+    font-family: 'calibri';
+    font-size: 16px;
+    color:rgb(94, 90, 90);
+}
+.form-register p {
+    height:40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    color: white;
+}
+.form-register a {
+    color:#14d4ee; /*link de registro*/
+    text-decoration: none;
+}
+.form-register a:hover{
+    color:#F2F6F8;
+    text-decoration: underline;
+}
+.form-register .botons{
+    width:100%;
+    background:#6DC62B; /*boton de ingreso*/
+    border:none;
+    padding: 12px;
+    color: #F2F6F8; /*letra de ingreso*/
+    margin:5px 0;
+    font: 40px;
+   
+
+}

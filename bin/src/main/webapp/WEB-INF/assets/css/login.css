@@ -1,0 +1,84 @@
+
+body {
+	margin:0;
+    padding: 0;
+    background-image: url("/img/medicamento.jpg");
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+#logo{
+    height: 90px;
+    align-self: center;
+}
+
+.login { 
+    background-color: #00507d; /*fondo de la capsula*/
+    padding:10px;
+    margin-left:37%;
+    margin-right:37%;
+    margin-top:60px;
+    border-radius:10px;
+    font-family: 'calibri';
+    box-shadow: 7px 13px 37px #000;
+
+}
+
+.login h3 {
+    font-size: 22px;
+    margin-top:10px;
+    margin-bottom:15px;
+    text-align: center;
+    color:#01C7DD;
+}
+
+.login h6 {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: center;
+    color:#F2F6F8;
+}
+.login .form-control{
+    width:100%;
+    background:#CADDED;/*fondo del rectangulo que rellena el user*/
+    padding:10px;
+    border-radius: 4px;
+    margin-bottom: 1 px solid #01C7DD;
+    font-family: 'calibri';
+    font-size: 18px;
+    color:#00507d;
+    
+}
+.login .form-label{
+	width:100%;
+    padding:5px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    font-size: 18px;
+    color:#f2f8f6;
+}
+
+.login p {
+    height:40px;
+    text-align: center;
+    font-size: 18px;
+
+}
+.login a {
+    color:#F2F6F8; /*link de registro*/
+    text-decoration: none;
+}
+.login a:hover{
+    color:#F2F6F8;
+    text-decoration: underline;
+}
+.login .botons{
+    width:100%;
+    background:#6DC62B; /*boton de ingreso*/
+    border:none;
+    padding: 12px;
+    color: #F2F6F8; /*letra de ingreso*/
+    margin:inline;
+    font: 40px;
+
+}
