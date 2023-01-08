@@ -29,7 +29,7 @@
             
                 </ul>
                 <ul class="button-container" id botones>
-                    <a class="btn btn-primary" href="/inicio">Volver al inicio</a>  
+                    <a class="btn btn-primary" href="/index.html">Volver al inicio</a>  
             
                 </ul>
             </div>
@@ -40,15 +40,21 @@
     
     
     <section class="form-register">
-        <form action="/register" method="post" id="register">
-            <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre">
-            <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido">
+        <form action="ruta" method="post">
+            <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+            <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
             <input class="controls" type="text" name="rut" id="rut" placeholder="Ingrese su rut">
             <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-            <input class="controls" type="password" name="pass" id="pass" placeholder="Ingrese su Contraseï¿½a">
-
-            <input class="botons" type="submit" value="Registrar" >
-    <p><a href="login.html">ï¿½Ya tengo cuenta?</a></p>
+            <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+            <select class="controls" name="sexo2" id="sexo2">
+                <option value="0">Seleccione su sexo</option>
+                <option value="1">Femenino</option>
+                <option value="2">Masculino</option>
+                <option value="3">Otro</option>
+                <option value="4">Prefiero no decir</option>
+            </select>
+            <input class="botons" type="submit" value="Registrar">
+    <p><a href="login.html">¿Ya tengo cuenta?</a></p>
     
         </form>
     </section>

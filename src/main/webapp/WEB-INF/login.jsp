@@ -28,7 +28,7 @@
             
                 </ul>
                 <ul class="button-container" id botones>
-                    <a class="btn btn-primary" href="/index.html">Volver al inicio</a>  
+                    <a class="btn btn-primary" href="/inicio">Volver al inicio</a>  
             
                 </ul>
             </div>

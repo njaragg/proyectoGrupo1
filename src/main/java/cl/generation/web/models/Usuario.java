@@ -51,31 +51,31 @@ public class Usuario {
 	@Transient
 	private String password2;
 
-	@NotNull
+	
 	@Size(min = 3, max = 15, message = "Error en el ingreso del nombre") // validamos tamaño mínimo y máximo de ese
 																			// atributo
 	private String nombre;
 
-	@NotNull
+	
 	@Size(min = 2, max = 15, message = "Error en el ingreso del apellido")
 	private String apellido;
 
-	@NotNull
+	
 	private String rut;
 
-	@NotNull
+	
 	private String correo;
 
-	@NotNull
+	
 	private int telefono;
 
-	@NotNull
+	
 	private Date fechaNac;
 
-	@NotNull
+
 	private String sexo;
 
-	@NotNull
+	
 	private String genero;
 
 
