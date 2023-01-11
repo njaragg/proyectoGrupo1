@@ -38,7 +38,7 @@ public class LoginController {
 
 		if(resultadoLogin) {//resultadoLogin == true, login correcto
 			//ir a una ruta interna http://localhost:8080/home
-			return "redirect:/home";
+			return "redirect:http://localhost:3000/";
 		}else {
 			model.addAttribute("msgError", "Por favor verifica tus datos ingresados");
 			return "login.jsp";
